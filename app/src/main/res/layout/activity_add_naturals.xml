@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.johnlazzarini.countingsheep.AddNaturalsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:id="@+id/add_naturals_root_id">
+
+    <TextView
+        android:id="@+id/add_naturals_current_points_id"
+        android:text="Current Points: 0"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/add_naturals_prompt_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="40dp"/>
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/add_naturals_entry_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:textSize="40dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="32dp"
+        android:id="@+id/add_naturals_correctness_id"
+        android:textSize="22dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Waiting for answer..."
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="16dp"
+        android:id="@+id/add_naturals_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"/>
+</LinearLayout>
+</ScrollView>
