@@ -1,0 +1,110 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorButtonNormal">@color/submitButton</item>
+    </style>
+
+    <style name="SubmitButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">77dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:text">Submit</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="SendEmailButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">77dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:text">Email Your Results</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="CorrectnessStyle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="EditStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">""</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="PromptStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:layout_weight">5</item>
+    </style>
+
+    <style name="InteractionBoxStyle">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="StreakStyle">
+        <item name="android:text">Level 1</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/submitButton</item>
+    </style>
+
+    <style name="MainLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CategoryStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="nameDisplayArea">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">example@email.com</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="dataDisplay">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Email your statistics to:</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginTop">64dp</item>
+    </style>
+</resources>
