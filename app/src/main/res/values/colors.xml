@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#2980b9</color>
+    <color name="colorPrimaryDark">#2980b9</color>
+    <color name="colorAccent">#FF69B4	</color>
+    <color name="submitButton">#FF69B4	</color>
+
+    <color name="addition">#FDDB6D</color>
+    <color name="subtraction">#f1279f</color>
+    <color name="multiplication">#f62a37</color>
+    <color name="division">#fb8d2d</color>
+    <color name="learnAddition">#ffffff</color>
+    <color name="learnSubtraction">#ffffff</color>
+    <color name="learnMultiplication">#ffffff</color>
+    <color name="learnDivision">#ffffff</color>
+    <color name="naturals">#ff6633</color>
+    <color name="integers">#ff3366</color>
+
+    <color name="white">#ffffff</color>
+    <color name="green">#27ae60</color>
 </resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.johnlazzarini.countingsheep.SubtractNaturalsActivity">
+    <LinearLayout
+        android:id="@+id/root_id"
+        style="@style/MainLayoutStyle">
+        <LinearLayout
+            android:id="@+id/progress_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/current_points_id"
+                style="@style/StreakStyle"/>
+            <LinearLayout
+                android:id="@+id/face_root"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"></LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/input_output"
+            style="@style/InteractionBoxStyle">
+            <TextView
+                android:id="@+id/prompt_id"
+                style="@style/PromptStyle"
+                />
+            <EditText
+                android:id="@+id/entry_id"
+                style="@style/EditStyle"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/correctness_id"
+            style="@style/CorrectnessStyle"/>
+        <Button
+            android:id="@+id/submit"
+            style="@style/SubmitButtonStyle"/>
+        <TextView
+            android:id="@+id/data"
+            style="@style/dataDisplay"/>
+        <EditText
+            android:id="@+id/email_recipient_name_area"
+            style="@style/nameDisplayArea"/>
+        <Button
+            android:id="@+id/send_email"
+            style="@style/SendEmailButtonStyle" />
+    </LinearLayout>
+</ScrollView>

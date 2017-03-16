@@ -8,52 +8,27 @@
 
     <TextView
         android:id="@+id/addition_id"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
+        style="@style/CategoryStyle"
         android:text="Addition"
-        android:gravity="center_vertical"
-        android:background="#ff6666"
+        android:background="#8e44ad"
         android:paddingLeft="16dp"
         />
     <TextView
         android:id="@+id/subtraction_id"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
+        style="@style/CategoryStyle"
         android:text="Subtraction"
-        android:gravity="center_vertical"
-        android:background="#9ecd64"
-        android:paddingLeft="16dp"
+        android:background="#f39c12"
         />
     <TextView
         android:id="@+id/multiplication_id"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:textSize="22sp"
+        style="@style/CategoryStyle"
         android:text="Multiplication"
-        android:gravity="center_vertical"
-        android:background="#9966cc"
-        android:textColor="#ffffff"
-        android:paddingLeft="16dp"
+        android:background="#27ae60"
         />
     <TextView
         android:id="@+id/division_id"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:textSize="22sp"
+        style="@style/CategoryStyle"
         android:text="Division"
-        android:gravity="center_vertical"
-        android:background="#0033f1"
-        android:textColor="#ffffff"
-        android:paddingLeft="16dp"
+        android:background="#e74c3c"
         />
-    <ImageView
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/sheep"/>
 </LinearLayout>

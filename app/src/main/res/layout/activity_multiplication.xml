@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.johnlazzarini.countingsheep.MultiplicationActivity">
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/multiply_naturals_id"
+        style="@style/CategoryStyle"
+        android:text="Practice Multiplying Natural Numbers"
+        android:background="#9b59b6"
+        />
+    <TextView
+        android:id="@+id/multiply_integers_id"
+        style="@style/CategoryStyle"
+        android:text="Practice Multiplying Integers"
+        android:background="#e74c3c"
+        />
+</LinearLayout>

@@ -7,36 +7,16 @@
     tools:context="com.johnlazzarini.countingsheep.AdditionActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
-        android:text="Learn how to Add!"
-        android:gravity="center_vertical"
-        android:background="#aabbdd"
-        android:paddingLeft="16dp"
-        />
-    <TextView
         android:id="@+id/add_naturals_id"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
-        android:text="Test Yourself: Adding Natural Numbers"
-        android:gravity="center_vertical"
-        android:background="#22aa44"
-        android:paddingLeft="16dp"
+        style="@style/CategoryStyle"
+        android:background="#e74c3c"
+        android:text="Practice Adding Natural Numbers"
         />
     <TextView
         android:id="@+id/add_integers_id"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:textSize="22sp"
-        android:text="Test Yourself: Adding Integers"
-        android:gravity="center_vertical"
-        android:background="#ff55ff"
-        android:textColor="#ffffff"
-        android:paddingLeft="16dp"
+        style="@style/CategoryStyle"
+        android:background="#3498db"
+        android:text="Practice Adding Integers"
         />
 
 </LinearLayout>

@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class AddIntegersActivity extends MathActivity implements MathActivityInterface {
+public class SubtractIntegersActivity extends MathActivity implements MathActivityInterface {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +27,18 @@ public class AddIntegersActivity extends MathActivity implements MathActivityInt
 
         //Randomizes an initial question
         final RandomQuestion question = new RandomQuestion();
-        question.randomizeOperands(question.getMin(), question.getLowMax());
+        question.randomizeNaturalSubtraction(question.getMin(), question.getLowMax());
         question.randomlySignOperands();
 
         //Set the activity duration in milliseconds (30,000 milliseconds == 3 seconds)
         final int timerLength = 30000;
+
         //Creates a user with information such as level, points, and whether or not he/she has run out of time for the activity
-        final User theUser = new User("Addition", "Integers", timerLength);
+        final User theUser = new User("Subtraction", "Integers", timerLength);
 
         //Initializes the display field
         final TextView prompt = (TextView) findViewById(R.id.prompt_id);
-        prompt.setText(question.toAdditionString());
+        prompt.setText(question.toIntegerSubtractionString());
 
         //Initializes the time display, which appears above the submit button
         final TextView contextDisplay = (TextView) findViewById(R.id.correctness_id);
@@ -74,25 +75,24 @@ public class AddIntegersActivity extends MathActivity implements MathActivityInt
                 incorrectSound, sheepGraphicDisplay, submit);
 
         createAndActivateTimer(timerLength, contextDisplay, dataDisplay, recipientNameArea,
-                inputOutput, progressRoot, sendEmail, submit, AddIntegersActivity.this, theUser);
+                inputOutput, progressRoot, sendEmail, submit, SubtractIntegersActivity.this, theUser);
     }
 
     //overloaded methods
     public void addSheep(LinearLayout root, User theUser){
-        ImageView newSheepFace = new ImageView(AddIntegersActivity.this, null);
+        ImageView newSheepFace = new ImageView(SubtractIntegersActivity.this, null);
         newSheepFace.setLayoutParams(new ActionBar.LayoutParams(60, 60));
         newSheepFace.setImageResource(R.drawable.boldsheep);
         root.addView(newSheepFace);
     }
 
     public boolean userAnswerIsCorrect(EditText theEntry, RandomQuestion theQuestion){
-        boolean correct = Integer.parseInt(theEntry.getText().toString().trim()) == (theQuestion.getLeftOperand() + theQuestion.getRightOperand());
-        return correct;
+         return (Integer.parseInt(theEntry.getText().toString().trim()) == (theQuestion.getLeftOperand() - theQuestion.getRightOperand()));
     }
 
     public void generateNewQuestion(TextView thePrompt, RandomQuestion theQuestion){
-        theQuestion.randomizeOperands(theQuestion.getMin(),theQuestion.getLowMax());
+        theQuestion.randomizeNaturalSubtraction(theQuestion.getMin(),theQuestion.getLowMax());
         theQuestion.randomlySignOperands();
-        thePrompt.setText(theQuestion.toAdditionString());
+        thePrompt.setText(theQuestion.toIntegerSubtractionString());
     }
 }
